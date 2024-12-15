@@ -5,6 +5,7 @@ import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
 import { Oscar } from "./components/Oscar";
+import Button from "./components/Button";
 
 export default function App() {
   const personName = {
@@ -34,6 +35,7 @@ export default function App() {
       <Oscar>
         <Heading>Oscar goes to Scott Adkins !</Heading>
       </Oscar>
+      <Button handleClick={handleClick()} />
     </div>
   );
 }
