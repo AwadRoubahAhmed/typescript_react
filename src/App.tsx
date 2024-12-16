@@ -7,6 +7,7 @@ import { Status } from "./components/Status";
 import { Oscar } from "./components/Oscar";
 import { Button } from "./components/Button";
 import { Input } from "./components/Input";
+import Container from "./components/Container";
 
 export default function App() {
   //State;
@@ -46,11 +47,8 @@ export default function App() {
         <Heading>Oscar goes to Scott Adkins !</Heading>
       </Oscar>
       <Button handleClick={handleClick} />
-      <Input
-        inputValue={inputValue}
-        setInputValue={setInputValue}
-        handleChange={handleChange}
-      />
+      <Input inputValue={inputValue} handleChange={handleChange} />
+      <Container backgroundColor="red" />
     </div>
   );
 }

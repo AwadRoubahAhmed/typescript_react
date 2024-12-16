@@ -1,7 +1,7 @@
 // 7. Input Events types;
 
 type InputProps = {
-  type: "text" | "number" | "email" | "passwords";
+  type?: "text" | "number" | "email" | "passwords";
   placeholder: string;
   inputValue: string;
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -15,7 +15,7 @@ export const Input: React.FC<InputProps> = ({ inputValue, handleChange }) => {
         placeholder="Enter your name"
         value={inputValue}
         onChange={handleChange}
-        className="my-6 p-1 rounded"
+        className="input input-bordered w-full max-w-xs my-6 text-white"
       />
       <h2 className="pb-6 text-white">{inputValue}</h2>
     </div>
