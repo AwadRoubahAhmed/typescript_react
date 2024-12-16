@@ -1,4 +1,4 @@
-import { Children } from "react";
+import { useState } from "react";
 import Greet from "./components/Greet";
 import { Heading } from "./components/Heading";
 import { Person } from "./components/Person";
@@ -6,8 +6,12 @@ import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
 import { Oscar } from "./components/Oscar";
 import { Button } from "./components/Button";
+import { Input } from "./components/Input";
 
 export default function App() {
+  //State;
+  const [inputValue, setInputValue] = useState<string>("");
+
   const personName = {
     firstName: "John",
     lastName: "Doe",
@@ -24,6 +28,10 @@ export default function App() {
     console.log("Button Clicked !!");
   };
 
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(event.target.value);
+  };
+
   return (
     <div className="max-w-full min-h-svh bg-slate-900 text-black text-center">
       <h1 className="text-3xl text-center text-white font-bold underline">
@@ -38,6 +46,11 @@ export default function App() {
         <Heading>Oscar goes to Scott Adkins !</Heading>
       </Oscar>
       <Button handleClick={handleClick} />
+      <Input
+        inputValue={inputValue}
+        setInputValue={setInputValue}
+        handleChange={handleChange}
+      />
     </div>
   );
 }
