@@ -4,12 +4,15 @@ type ButtonProps = {
   handleClick: () => void;
 };
 
-const Button = (props: ButtonProps) => {
+export const Button: React.FC<ButtonProps> = ({ handleClick }) => {
   return (
-    <div>
-      <button onClick={props.handleClick}>Click</button>
+    <div className="bg-emerald-500">
+      <button
+        onClick={handleClick}
+        className="text-white p-1 my-6 border bg-slate-800 hover:bg-slate-700 rounded"
+      >
+        Click Me
+      </button>
     </div>
   );
 };
-
-export default Button;

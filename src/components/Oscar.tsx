@@ -1,7 +1,5 @@
 // 6. Chidren Props ...
 
-import { ReactNode } from "react";
-
 type OscarProps = {
   children: React.ReactNode;
 };
