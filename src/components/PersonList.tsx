@@ -1,11 +1,7 @@
 // 3. Typing an Array Props;
 
-type PersonsListProps = {
-  names: {
-    first: string;
-    last: string;
-  }[];
-};
+import { PersonsListProps } from "./typescript/PropsTypes";
+
 export const PersonList = (props: PersonsListProps) => {
   return (
     <div className="bg-cyan-300 mb-6">

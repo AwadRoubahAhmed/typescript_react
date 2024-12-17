@@ -1,11 +1,6 @@
-// 7. Input Events types;
+// 8. Input Events types;
 
-type InputProps = {
-  type?: "text" | "number" | "email" | "passwords";
-  placeholder: string;
-  inputValue: string;
-  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-};
+import { InputProps } from "./typescript/PropsTypes";
 
 export const Input: React.FC<InputProps> = ({ inputValue, handleChange }) => {
   return (

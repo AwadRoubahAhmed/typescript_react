@@ -1,8 +1,6 @@
-// 6. Event Props types;
+// 7. Event Props types;
 
-type ButtonProps = {
-  handleClick: () => void;
-};
+import { ButtonProps } from "./typescript/PropsTypes";
 
 export const Button: React.FC<ButtonProps> = ({ handleClick }) => {
   return (

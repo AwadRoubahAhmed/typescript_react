@@ -1,11 +1,5 @@
 // 2. Typing an Object Props;
-
-type PersonProps = {
-  name: {
-    firstName: string;
-    lastName: string;
-  };
-};
+import { PersonProps } from "./typescript/PropsTypes";
 
 export const Person = ({ name }: PersonProps) => {
   return (

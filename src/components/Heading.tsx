@@ -1,8 +1,6 @@
 // 5. Children Props ...
 
-type HeadingProps = {
-  children: string;
-};
+import { HeadingProps } from "./typescript/PropsTypes";
 
 export const Heading = ({ children }: HeadingProps) => {
   return (

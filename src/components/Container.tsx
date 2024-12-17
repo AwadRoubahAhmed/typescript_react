@@ -1,10 +1,6 @@
-// 7. Typing Styles as Props;
+// 9. Typing Styles as Props;
 
-type ColorOption = "red" | "green" | "blue" | "yellow";
-
-type ContainerProps = {
-  backgroundColor?: ColorOption;
-};
+import { ContainerProps } from "./typescript/PropsTypes";
 
 const Container: React.FC<ContainerProps> = ({ backgroundColor }) => {
   return (

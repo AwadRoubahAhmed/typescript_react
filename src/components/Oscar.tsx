@@ -1,8 +1,6 @@
 // 6. Chidren Props ...
 
-type OscarProps = {
-  children: React.ReactNode;
-};
+import { OscarProps } from "./typescript/PropsTypes";
 
 export const Oscar = (props: OscarProps) => {
   return (

@@ -1,8 +1,6 @@
 // 4. Advanced Props => union, optional type ...
 
-type StatusProps = {
-  status?: "loading" | "complete" | "error";
-};
+import { StatusProps } from "./typescript/PropsTypes";
 
 export const Status = ({ status }: StatusProps) => {
   let message;
