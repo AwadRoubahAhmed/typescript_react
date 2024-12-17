@@ -48,7 +48,7 @@ export default function App() {
       </Oscar>
       <Button handleClick={handleClick} />
       <Input inputValue={inputValue} handleChange={handleChange} />
-      <Container backgroundColor="red" />
+      <Container backgroundColor="yellow" />
     </div>
   );
 }
