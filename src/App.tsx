@@ -8,6 +8,7 @@ import { Oscar } from "./components/Oscar";
 import { Button } from "./components/Button";
 import { Input } from "./components/Input";
 import Container from "./components/Container";
+import { LoggedIn } from "./components/state/LoggedIn";
 
 export default function App() {
   //State;
@@ -25,6 +26,7 @@ export default function App() {
     { First: "Sergio", last: "Busquez" },
   ];
 
+  //Comportement;
   const handleClick = () => {
     console.log("Button Clicked !!");
   };
@@ -33,6 +35,7 @@ export default function App() {
     setInputValue(event.target.value);
   };
 
+  //Affichage(render);
   return (
     <div className="max-w-full min-h-svh bg-slate-900 text-black text-center">
       <h1 className="text-3xl text-center text-white font-bold underline">
@@ -49,6 +52,7 @@ export default function App() {
       <Button handleClick={handleClick} />
       <Input inputValue={inputValue} handleChange={handleChange} />
       <Container backgroundColor="yellow" />
+      <LoggedIn />
     </div>
   );
 }
